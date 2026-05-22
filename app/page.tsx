@@ -53,7 +53,7 @@ export default function Home() {
 
   // Data Paket Terima Beres
   const packages = [
-    { name: "Paket 4 Kamera Dahua 2MP no audio", price: "Rp 3.700.000", feature: ["4x Kamera Dahua 4MP", "DVR 4 Channel", "Harddisk 1TB", "Kabel Coaxial 150M","PSU Dahua 4CH", "Gratis Jasa Pasang & Setting HP"] },
+    { name: "Paket 4 Kamera Dahua 2MP no audio", price: "Rp 3.700.000", feature: ["4x Kamera Dahua 2MP", "DVR 4 Channel", "Harddisk 1TB", "Kabel Coaxial 150M","PSU Dahua 4CH", "Gratis Jasa Pasang & Setting HP"] },
     { name: "Paket 8 Kamera Dahua 2MP Color non audio", price: "Rp 7.000.000", feature: ["8x Kamera Dahua 2MP Color", "DVR 8 Channel", "Harddisk 2TB", "Kabel RG59 200M","PSU dahua 8ch", "Gratis Jasa Pasang & Setting HP"] },
     { name: "Paket 8 Kamera Dahua 5MP Color non audio", price: "Rp 9.700.000", feature: ["8x Kamera Dahua 5MP Color", "DVR 8 Channel", "Harddisk 2TB", "Kabel RG59 200M","PSU dahua 8ch", "Gratis Jasa Pasang & Setting HP"] },
     { name: "Paket 16 Kamera Dahua 5MP Color non audio", price: "Rp 15.000.000", feature: ["16x Kamera Dahua 5MP Color", "DVR 16 Channel", "Harddisk 2TB", "Kabel RG59 300M","PSU dahua 16ch", "Gratis Jasa Pasang & Setting HP"] },
@@ -294,6 +294,26 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      {/* SECTION: AREA LAYANAN */}
+      <section className="py-16 px-6 relative z-10 border-t border-blue-950/40">
+        <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-950/20 to-transparent p-8 rounded-3xl border border-blue-900/30 flex flex-col md:flex-row items-center gap-8">
+          <div className="text-4xl">🚚</div>
+          <div>
+            <h2 className="text-xl font-bold text-white mb-2">Area Jangkauan Layanan</h2>
+            <p className="text-blue-200/60 text-xs leading-relaxed mb-4">
+              Kami melayani jasa survei, instalasi, dan maintenance untuk wilayah <strong>Jakarta, Depok, dan Bogor</strong>. 
+              Tim kami siap datang ke lokasi untuk memastikan sistem keamanan Anda terpasang dengan optimal dan rapi.
+            </p>
+            <div className="flex gap-2">
+              {["Jakarta", "Depok", "Bogor"].map((city) => (
+                <span key={city} className="bg-blue-900/30 text-cyan-400 px-3 py-1 rounded-full text-[10px] font-bold border border-blue-800/50">
+                  {city}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
