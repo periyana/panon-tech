@@ -75,25 +75,131 @@ export default function Home() {
     <main className="min-h-screen bg-[#050a12] text-blue-100 font-sans antialiased relative selection:bg-yellow-400 selection:text-black">
       
       {/* BACKGROUND EFFECTS */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0b1524_1px,transparent_1px),linear-gradient(to_bottom,#0b1524_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none opacity-70 z-0"></div>
-      <div className="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
-      <div className="absolute top-[20%] right-[-10%] w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-[130px] pointer-events-none z-0"></div>
+<div className="absolute inset-0 bg-[linear-gradient(to_right,#0b1524_1px,transparent_1px),linear-gradient(to_bottom,#0b1524_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none opacity-70 z-0"></div>
 
-      {/* HEADER / NAVBAR */}
-      <header className="bg-[#050a12]/80 backdrop-blur-xl border-b border-blue-950/50 sticky top-0 z-50 px-6 py-4">
-        <div className="max-w-6xl mx-auto flex justify-between items-center">
-          <div className="text-2xl font-black tracking-wider cursor-pointer text-white" onClick={() => { setActiveTab("produk"); setSelectedBrand("Semua"); }}>
-            PANON<span className="text-yellow-400">-TECH</span>
-          </div>
-          
-          <nav className="flex gap-4 md:gap-8 text-sm font-semibold">
-            <button onClick={() => setActiveTab("produk")} className={`transition-colors duration-200 ${activeTab === "produk" ? "text-yellow-400" : "text-blue-300/70 hover:text-white"}`}>Produk</button>
-            <button onClick={() => setActiveTab("layanan")} className={`transition-colors duration-200 ${activeTab === "layanan" ? "text-yellow-400" : "text-blue-300/70 hover:text-white"}`}>Layanan</button>
-            <button onClick={() => setActiveTab("paket")} className={`transition-colors duration-200 ${activeTab === "paket" ? "text-yellow-400" : "text-blue-300/70 hover:text-white"}`}>Paket Harga</button>
-            <button onClick={() => setActiveTab("hubungi")} className={`transition-colors duration-200 ${activeTab === "hubungi" ? "text-yellow-400" : "text-blue-300/70 hover:text-white"}`}>Hubungi Kami</button>
-          </nav>
-        </div>
-      </header>
+<div className="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+<div className="absolute top-[20%] right-[-10%] w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-[130px] pointer-events-none z-0"></div>
+
+{/* HEADER / NAVBAR */}
+<header className="bg-[#050a12]/80 backdrop-blur-xl border-b border-blue-950/50 sticky top-0 z-50 px-6 py-4">
+  <div className="max-w-7xl mx-auto flex justify-between items-center">
+
+    {/* LOGO */}
+    <div
+      className="cursor-pointer flex items-center gap-4 group"
+      onClick={() => {
+        setActiveTab("produk");
+        setSelectedBrand("Semua");
+      }}
+    >
+
+      {/* LOGO ICON */}
+<div className="relative flex items-center justify-center w-[90px] h-[90px]">
+
+  {/* WIFI SIGNAL */}
+  <div className="absolute top-0 right-0 z-20">
+    <div className="relative w-16 h-16">
+
+      <div className="absolute top-0 right-0 w-14 h-14 border-[5px] border-yellow-400 border-b-transparent border-l-transparent rounded-full rotate-45"></div>
+
+      <div className="absolute top-2 right-2 w-10 h-10 border-[5px] border-yellow-400 border-b-transparent border-l-transparent rounded-full rotate-45"></div>
+
+      <div className="absolute top-4 right-4 w-6 h-6 border-[5px] border-yellow-400 border-b-transparent border-l-transparent rounded-full rotate-45"></div>
+
+    </div>
+  </div>
+
+  {/* EYE */}
+  <div className="relative w-[85px] h-[50px]">
+
+    {/* TOP EYE */}
+    <div className="absolute inset-0 border-t-[12px] border-[#001b66] rounded-[100%]"></div>
+
+    {/* BOTTOM EYE */}
+    <div className="absolute inset-0 border-b-[12px] border-[#001b66] rounded-[100%]"></div>
+
+    {/* LEFT SHARP */}
+    <div className="absolute left-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[12px] border-b-[12px] border-r-[18px] border-transparent border-r-[#001b66]"></div>
+
+    {/* RIGHT SHARP */}
+    <div className="absolute right-0 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[12px] border-b-[12px] border-l-[18px] border-transparent border-l-[#001b66]"></div>
+
+    {/* CAMERA LENS */}
+    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[38px] h-[38px] rounded-full bg-gradient-to-br from-blue-300 via-blue-700 to-[#001133] border-[4px] border-[#0d2f7a] shadow-[0_0_20px_rgba(0,100,255,0.35)]">
+
+      {/* INNER LENS */}
+      <div className="absolute inset-[7px] rounded-full bg-gradient-to-br from-[#001133] to-black"></div>
+
+      {/* REFLECTION */}
+      <div className="absolute top-[5px] left-[7px] w-[10px] h-[10px] rounded-full bg-white/90 blur-[1px]"></div>
+
+      <div className="absolute bottom-[8px] right-[6px] w-[6px] h-[6px] rounded-full bg-blue-200/80"></div>
+    </div>
+  </div>
+</div>
+
+      {/* TEXT */}
+      <div className="leading-tight">
+        <h1 className="text-2xl md:text-4xl font-black tracking-wide">
+          <span className="text-blue-100">PANON</span>
+          <span className="text-yellow-400">TECH</span>
+        </h1>
+
+        <p className="text-[10px] md:text-sm tracking-[0.3em] text-blue-200/70 font-semibold mt-1">
+          KOMPUTER • JARINGAN • CCTV
+        </p>
+      </div>
+    </div>
+
+    {/* NAVIGATION */}
+    <nav className="flex gap-4 md:gap-8 text-sm font-semibold">
+      <button
+        onClick={() => setActiveTab("produk")}
+        className={`transition-all duration-300 ${
+          activeTab === "produk"
+            ? "text-yellow-400"
+            : "text-blue-300/70 hover:text-white"
+        }`}
+      >
+        Produk
+      </button>
+
+      <button
+        onClick={() => setActiveTab("layanan")}
+        className={`transition-all duration-300 ${
+          activeTab === "layanan"
+            ? "text-yellow-400"
+            : "text-blue-300/70 hover:text-white"
+        }`}
+      >
+        Layanan
+      </button>
+
+      <button
+        onClick={() => setActiveTab("paket")}
+        className={`transition-all duration-300 ${
+          activeTab === "paket"
+            ? "text-yellow-400"
+            : "text-blue-300/70 hover:text-white"
+        }`}
+      >
+        Paket Harga
+      </button>
+
+      <button
+        onClick={() => setActiveTab("hubungi")}
+        className={`transition-all duration-300 ${
+          activeTab === "hubungi"
+            ? "text-yellow-400"
+            : "text-blue-300/70 hover:text-white"
+        }`}
+      >
+        Hubungi Kami
+      </button>
+    </nav>
+  </div>
+</header>
 
       {/* HERO TITLE SECTION */}
       <section className="relative pt-20 pb-12 px-6 text-center z-10">
