@@ -241,7 +241,7 @@ export default function Home() {
                     <div className="text-xl bg-[#101e33] p-2.5 border border-blue-900/30 rounded-xl text-yellow-400">⏰</div>
                     <div>
                       <p className="text-cyan-400 text-[10px] font-bold uppercase tracking-wider">Jam Operasional</p>
-                      <p className="text-blue-200/70 text-xs">Senin – Sabtu: 08:00 – 17:00 WIB (Minggu Tutup)</p>
+                      <p className="text-blue-200/70 text-xs">Senin – Minggu: 08:00 – 20:00 WIB (ika pintu toko tertutup, silakan hubungi kami melalui WhatsApp untuk layanan lebih lanjut)</p>
                     </div>
                   </div>
                 </div>
