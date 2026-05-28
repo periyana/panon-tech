@@ -62,44 +62,63 @@ export default function Home() {
   const packages = [
     {
       name: "Paket 4 Kamera Dahua 2MP",
-      price: "Rp 3.700.000",
+      price: "Rp 3.750.000",
       feature: [
-        "4x Kamera Dahua 2MP",
-        "DVR 4 Channel",
-        "Harddisk 1TB",
-        "Gratis Setting HP",
+        "4x Kamera Dahua 2MP Indoor & Outdoor",
+        "DVR Dahua 4 Channel",
+        "Harddisk WD Purple Surveillance 1TB",
+        "Kabel RG59 150 Meter",
+        "Power Supply Dahua 4 Channel",
+        "4x Box Duradus",
+        "8x Konektor BNC + Power",
+        "Gratis Setting Monitoring HP",
+        "Termasuk Jasa Instalasi & Pemasangan",
       ],
     },
     {
       name: "Paket 8 Kamera Dahua 2MP",
-      price: "Rp 7.000.000",
+      price: "Rp 5.900.000",
       feature: [
-        "8x Kamera Dahua 2MP",
-        "DVR 8 Channel",
-        "Harddisk 2TB",
-        "Gratis Setting HP",
+        "8x Kamera Dahua 2MP Indoor & Outdoor",
+        "DVR Dahua 8 Channel",
+        "Harddisk WD Purple Surveillance 1TB",
+        "Kabel RG59 200 Meter",
+        "Power Supply Dahua 8 Channel",
+        "8x Box Duradus",
+        "16x Konektor BNC + Power",
+        "Gratis Setting Monitoring HP",
+        "Termasuk Jasa Instalasi & Pemasangan",
       ],
     },
     {
-      name: "Paket 8 Kamera Dahua 5MP",
-      price: "Rp 9.700.000",
+      name: "Paket 16 Kamera Dahua 2 mp",
+      price: "Rp 12.110.000",
       feature: [
-        "8x Kamera Dahua 5MP",
-        "DVR 8 Channel",
-        "Harddisk 2TB",
-        "Gratis Setting HP",
+        "16x Kamera Dahua 2MP Indoor & Outdoor",
+        "DVR Dahua 16 Channel",
+        "Harddisk WD Purple Surveillance 4TB",
+        "Kabel RG59 300 Meter",
+        "Power Supply Hiview 16 Channel",
+        "16x Box Duradus",
+        "32x Konektor BNC + Power",
+        "Gratis Setting Monitoring HP",
+        "Termasuk Jasa Instalasi & Pemasangan",
       ],
     },
     {
-      name: "Paket 16 Kamera Dahua 5MP",
-      price: "Rp 15.000.000",
-      feature: [
-        "16x Kamera Dahua 5MP",
-        "DVR 16 Channel",
-        "Harddisk 2TB",
-        "Gratis Setting HP",
-      ],
-    },
+name: "Paket Custom CCTV",
+price: "Hubungi Kami",
+feature: [
+"Pilih Kamera 2MP / 5MP / 8MP",
+"Bisa Indoor & Outdoor",
+"Pilih Jumlah Kamera Sesuai Kebutuhan",
+"Support Monitoring HP",
+"Free Survey Lokasi",
+"Kabel & Instalasi Menyesuaikan Lokasi",
+"Gratis Setting Monitoring HP",
+"Termasuk Jasa Instalasi & Pemasangan",
+],
+},
   ];
 
   const reviews = [
@@ -122,6 +141,7 @@ export default function Home() {
       rating: 5,
     },
   ];
+
 
   const filteredProducts =
     selectedBrand === "Semua"
